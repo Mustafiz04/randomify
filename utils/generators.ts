@@ -212,3 +212,12 @@ function shuffleArray<T>(array: T[]): T[] {
   return newArray
 }
 
+export function generateDateTimeInfo() {
+  return {
+    'Current Time': new Date().toLocaleTimeString(),
+    'Current Date': new Date().toLocaleDateString(),
+    'Timestamp': Date.now(),
+    'UTC String': new Date().toUTCString(),
+    'ISO String': new Date().toISOString()
+  }
+}
