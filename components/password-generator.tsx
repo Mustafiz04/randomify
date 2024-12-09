@@ -19,7 +19,7 @@ export function PasswordGenerator() {
   })
 
   const generateNewPassword = () => {
-    setPassword(generatePassword(length, options))
+    setPassword(generatePassword({ length, ...options }))
   }
 
   const copyToClipboard = () => {

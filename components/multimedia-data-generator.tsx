@@ -24,9 +24,9 @@ export function MultimediaDataGenerator() {
           {data && (
             <div className="p-2 bg-secondary rounded">
               <p><strong>Placeholder Image:</strong></p>
-              <Image src={data.placeholderImage} alt="Placeholder" width={300} height={200} />
-              <p><strong>Video Link:</strong> {data.videoLink}</p>
-              <p><strong>Audio Link:</strong> {data.audioLink}</p>
+              <Image src={data.imageUrl} alt="Placeholder" width={300} height={200} />
+              <p><strong>Video Link:</strong> {data.videoUrl}</p>
+              <p><strong>Audio Link:</strong> {data.audioUrl}</p>
             </div>
           )}
         </div>

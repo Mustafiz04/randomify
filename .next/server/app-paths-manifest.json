@@ -1,4 +1,21 @@
 {
+  "/address-info/page": "app/address-info/page.js",
+  "/edge-case-data/page": "app/edge-case-data/page.js",
   "/blockchain/page": "app/blockchain/page.js",
-  "/page": "app/page.js"
+  "/date-time/page": "app/date-time/page.js",
+  "/financial-data/page": "app/financial-data/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/numbers-ids/page": "app/numbers-ids/page.js",
+  "/email/page": "app/email/page.js",
+  "/multimedia-data/page": "app/multimedia-data/page.js",
+  "/dummy-data/page": "app/dummy-data/page.js",
+  "/password/page": "app/password/page.js",
+  "/security-data/page": "app/security-data/page.js",
+  "/structured-data/page": "app/structured-data/page.js",
+  "/testing-data/page": "app/testing-data/page.js",
+  "/personal-info/page": "app/personal-info/page.js",
+  "/page": "app/page.js",
+  "/text-content/page": "app/text-content/page.js",
+  "/web-networking/page": "app/web-networking/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
