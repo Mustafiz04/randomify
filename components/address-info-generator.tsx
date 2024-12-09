@@ -8,7 +8,7 @@ import { generateAddressInfo } from '@/utils/generators'
 export function AddressInfoGenerator() {
   const [data, setData] = useState<ReturnType<typeof generateAddressInfo> | null>(null)
 
-  const generateData = () => {
+  const generateNewAddress = () => {
     setData(generateAddressInfo())
   }
 
@@ -17,17 +17,23 @@ export function AddressInfoGenerator() {
       <CardHeader>
         <CardTitle>Address Information Generator</CardTitle>
       </CardHeader>
-      <CardContent>
-        <div className="space-y-4">
-          <Button onClick={generateData}>Generate Address Info</Button>
-          {data && (
-            <div className="p-2 bg-secondary rounded">
-              {Object.entries(data).map(([key, value]) => (
-                <p key={key}><strong>{key}:</strong> {value}</p>
-              ))}
-            </div>
-          )}
-        </div>
+      <CardContent className="space-y-4">
+        <Button onClick={generateNewAddress}>
+          Generate Address
+        </Button>
+        
+        {data && (
+          <div className="space-y-2">
+            <p><strong>Street:</strong> {data.street}</p>
+            <p><strong>City:</strong> {data.city}</p>
+            <p><strong>State:</strong> {data.state}</p>
+            <p><strong>ZIP Code:</strong> {data.zipCode}</p>
+            <p><strong>Country:</strong> {data.country}</p>
+            {data.apartment && (
+              <p><strong>Apartment:</strong> {data.apartment}</p>
+            )}
+          </div>
+        )}
       </CardContent>
     </Card>
   )
